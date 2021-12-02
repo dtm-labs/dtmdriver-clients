@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package busi;
+import "google/protobuf/empty.proto";
+
+option go_package = "./busi";
+
+message BusiReq {
+  int64 Amount = 1;
+  int64 UserId = 2;
+}
+
+// The dtm service definition.
+service Busi {
+  rpc TransIn(BusiReq) returns (google.protobuf.Empty) {}
+  rpc TransOut(BusiReq) returns (google.protobuf.Empty) {}
+}
+
