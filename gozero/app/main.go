@@ -10,6 +10,8 @@ import (
 	"github.com/yedf/dtmdriver-clients/busi"
 	"github.com/yedf/dtmdriver-clients/gozero/trans/pb"
 	trans "github.com/yedf/dtmdriver-clients/gozero/trans/pb"
+
+	// 下面这行导入gozero的dtm驱动
 	_ "github.com/yedf/dtmdriver-gozero"
 	"github.com/yedf/dtmgrpc"
 )
@@ -20,17 +22,19 @@ var (
 	inReq      = &trans.AdjustInfo{Amount: 30, UserID: 2}
 )
 
+// dtm已经通过配置，注册到下面这个地址，因此在dtmgrpc中使用该地址
 var dtmServer = "etcd://localhost:2379/dtmservice"
 
 func main() {
 	flag.Parse()
 
-	var c zrpc.RpcClientConf
-	conf.MustLoad(*configFile, &c)
-
+	// 使用dtm的客户端dtmgrpc之前，需要执行下面这行调用，告知dtmgrpc使用gozero的驱动来如何处理gozero的url
 	err := dtmdriver.Use("dtm-driver-gozero")
 	dtmimp.FatalIfError(err)
 
+	// 下面从配置文件中Load配置，然后通过BuildTarget获得业务服务的地址
+	var c zrpc.RpcClientConf
+	conf.MustLoad(*configFile, &c)
 	busiServer, err := c.BuildTarget()
 	dtmimp.FatalIfError(err)
 
@@ -41,6 +45,9 @@ func main() {
 func msg(busiServer string) {
 	gid := dtmgrpc.MustGenGid(dtmServer)
 	msg := dtmgrpc.NewMsgGrpc(dtmServer, gid).
+		// 事务的第一步为调用trans.TransSvcClient.TransOut
+		// 可以从trans.pb.go中找到上述方法对应的Method名称为"/trans.TransSvc/TransOut"
+		// dtm需要从dtm服务器调用该方法，所以不走强类型，而是走动态的url: busiServer+"/trans.TransSvc/TransOut"
 		Add(busiServer+"/trans.TransSvc/TransOut", &busi.BusiReq{Amount: 30, UserId: 1}).
 		Add(busiServer+"/trans.TransSvc/TransIn", &busi.BusiReq{Amount: 30, UserId: 2})
 
