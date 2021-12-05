@@ -32,7 +32,7 @@ func main() {
 	err = dtmdriver.Use("dtm-driver-protocol1")
 	dtmimp.FatalIfError(err)
 	// SampleCall("")
-	SampleCall("protocol1://")
+	SampleCall("protocol1:///")
 	select {}
 }
 

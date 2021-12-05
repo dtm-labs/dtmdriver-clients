@@ -8,10 +8,10 @@ require (
 	github.com/yedf/dtmcli v1.6.0
 	github.com/yedf/dtmdriver v0.0.0-20211203060147-29426c663b6e
 	github.com/yedf/dtmdriver-gozero v0.0.0-20211202141526-9fe6083e31d2
-	github.com/yedf/dtmdriver-protocol1 v0.0.0-20211205104407-f50a46978fb3
+	github.com/yedf/dtmdriver-protocol1 v0.0.0-20211205112411-d7a7052dc90e
 	github.com/yedf/dtmgrpc v1.6.0
 	google.golang.org/grpc v1.42.0
 	google.golang.org/protobuf v1.27.1
 )
 
-replace google.golang.org/grpc => google.golang.org/grpc v1.42.0
+replace google.golang.org/grpc => google.golang.org/grpc v1.38.0
