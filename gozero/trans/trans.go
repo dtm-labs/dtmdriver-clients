@@ -4,14 +4,14 @@ import (
 	"flag"
 	"fmt"
 
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/config"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/server"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/svc"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
 	"github.com/tal-tech/go-zero/core/conf"
 	"github.com/tal-tech/go-zero/core/logx"
 	"github.com/tal-tech/go-zero/core/service"
 	"github.com/tal-tech/go-zero/zrpc"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/internal/config"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/internal/server"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/internal/svc"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

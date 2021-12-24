@@ -1,6 +1,6 @@
 package svc
 
-import "github.com/yedf/dtmdriver-clients/gozero/trans/internal/config"
+import "github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

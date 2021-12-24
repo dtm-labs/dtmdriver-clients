@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"github.com/yedf/dtmdriver-clients/gozero/trans/internal/logic"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/internal/svc"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/pb"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/logic"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/svc"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
 )
 
 type TransSvcServer struct {

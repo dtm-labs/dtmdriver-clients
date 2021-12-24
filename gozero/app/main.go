@@ -3,16 +3,16 @@ package main
 import (
 	"flag"
 
+	"github.com/dtm-labs/dtmcli/dtmimp"
+	"github.com/dtm-labs/dtmdriver-clients/busi"
+	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
+	trans "github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
 	"github.com/tal-tech/go-zero/core/conf"
 	"github.com/tal-tech/go-zero/zrpc"
-	"github.com/yedf/dtmcli/dtmimp"
-	"github.com/yedf/dtmdriver-clients/busi"
-	"github.com/yedf/dtmdriver-clients/gozero/trans/pb"
-	trans "github.com/yedf/dtmdriver-clients/gozero/trans/pb"
 
 	// 下面这行导入gozero的dtm驱动
-	_ "github.com/yedf/driver-gozero"
-	"github.com/yedf/dtmgrpc"
+	_ "github.com/dtm-labs/driver-gozero"
+	"github.com/dtm-labs/dtmgrpc"
 )
 
 var (

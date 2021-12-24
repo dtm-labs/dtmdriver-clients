@@ -6,11 +6,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/yedf/dtmcli/dtmimp"
-	"github.com/yedf/dtmdriver"
-	"github.com/yedf/dtmdriver-clients/busi"
-	_ "github.com/yedf/dtmdriver-protocol1"
-	"github.com/yedf/dtmgrpc"
+	"github.com/dtm-labs/dtmcli/dtmimp"
+	"github.com/dtm-labs/dtmdriver"
+	"github.com/dtm-labs/dtmdriver-clients/busi"
+	_ "github.com/dtm-labs/dtmdriver-protocol1"
+	"github.com/dtm-labs/dtmgrpc"
 	"google.golang.org/grpc"
 )
 
