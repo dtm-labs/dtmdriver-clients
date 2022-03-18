@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package api.trans.v1;
+
+option go_package = "trans/api/trans/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.trans.v1";
+
+service Trans {
+	rpc TransIn(AdjustInfo) returns (Response);
+	rpc TransOut(AdjustInfo) returns (Response);
+}
+
+message AdjustInfo {
+	int64 Amount = 1;
+	int64 UserID = 2;
+}
+
+message Response {}
