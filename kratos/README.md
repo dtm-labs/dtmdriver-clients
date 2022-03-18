@@ -18,11 +18,11 @@ git clone git@github.com/dtm-labs/dtf.git
 ```yaml
 MicroService:
  Driver: 'dtm-driver-kratos' # name of the driver to handle register/discover
- Target: 'etcd://127.0.0.1:2379/dtmservice' # register dtm server to this url
+ Target: 'discovery://127.0.0.1:2379/dtmservice' # register dtm server to this url
  EndPoint: 'grpc://localhost:36790'
 ```
 
-### 运行
+### 运行dtm
 
 ```shell
 DISCOVERY_ENDPOINT=127.0.0.1:2379 go run main.go -c your_conf.yml # DISCOVERY_ENDPOINT 换成你的 etcd 服务地址

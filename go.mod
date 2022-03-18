@@ -6,7 +6,7 @@ require (
 	github.com/dtm-labs/driver-gozero v0.0.2
 	github.com/dtm-labs/dtmcli v1.7.4
 	github.com/dtm-labs/dtmdriver v0.0.1
-	github.com/dtm-labs/dtmdriver-kratos v0.0.0-20220318113458-787275b94ed2
+	github.com/dtm-labs/dtmdriver-kratos v0.0.1
 	github.com/dtm-labs/dtmdriver-protocol1 v0.0.1
 	github.com/dtm-labs/dtmgrpc v1.7.3
 	github.com/kevwan/gozero-dtm v0.0.0-20211201122454-5007fb2b35a1
