@@ -25,7 +25,7 @@ MicroService:
 ### 运行dtm
 
 ```shell
-DISCOVERY_ENDPOINT=127.0.0.1:2379 go run main.go -c your_conf.yml # DISCOVERY_ENDPOINT 换成你的 etcd 服务地址
+go run main.go -c your_conf.yml
 ```
 
 ## 启动service
@@ -41,5 +41,5 @@ make build && ./bin/trans -conf configs/config.yaml
 ```shell
 cd kratos/app
 
-DISCOVERY_ENDPOINT=127.0.0.1:2379 go run main.go # DISCOVERY_ENDPOINT 换成你的 etcd 服务地址
+go run main.go
 ```
