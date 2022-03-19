@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/dtm-labs/driver-gozero v0.0.2
-	github.com/dtm-labs/driver-kratos v0.0.1
+	github.com/dtm-labs/driver-kratos v0.0.2
 	github.com/dtm-labs/dtmcli v1.7.4
 	github.com/dtm-labs/dtmdriver v0.0.1
 	github.com/dtm-labs/dtmdriver-protocol1 v0.0.1
