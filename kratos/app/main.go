@@ -1,11 +1,10 @@
 package main
 
 import (
+	_ "github.com/dtm-labs/driver-kratos"
 	"github.com/dtm-labs/dtmcli/logger"
 	"github.com/dtm-labs/dtmdriver-clients/busi"
 	v1 "github.com/dtm-labs/dtmdriver-clients/kratos/app/v1"
-	_ "github.com/dtm-labs/dtmdriver-kratos"
-	driver "github.com/dtm-labs/dtmdriver-kratos"
 	"github.com/dtm-labs/dtmgrpc"
 )
 
@@ -15,8 +14,6 @@ const (
 )
 
 func main() {
-	driver.Init()
-
 	tcc(busiServer)
 }
 
