@@ -6,7 +6,7 @@ import (
 
 	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/internal/svc"
 	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
-	"github.com/tal-tech/go-zero/core/logx"
+	"github.com/zeromicro/go-zero/core/logx"
 )
 
 type TransInLogic struct {

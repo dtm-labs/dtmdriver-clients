@@ -7,8 +7,8 @@ import (
 	"github.com/dtm-labs/dtmdriver-clients/busi"
 	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
 	trans "github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/zrpc"
+	"github.com/zeromicro/go-zero/core/conf"
+	"github.com/zeromicro/go-zero/zrpc"
 
 	// 下面这行导入gozero的dtm驱动
 	_ "github.com/dtm-labs/driver-gozero"

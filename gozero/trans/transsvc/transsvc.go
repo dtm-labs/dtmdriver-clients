@@ -8,7 +8,7 @@ import (
 
 	"github.com/kevwan/gozero-dtm/trans/pb"
 
-	"github.com/tal-tech/go-zero/zrpc"
+	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"
 )
 
