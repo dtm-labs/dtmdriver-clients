@@ -4,7 +4,6 @@ import (
 	_ "github.com/dtm-labs/driver-kratos"
 	"github.com/dtm-labs/dtmcli/logger"
 	"github.com/dtm-labs/dtmdriver-clients/busi"
-	v1 "github.com/dtm-labs/dtmdriver-clients/kratos/app/v1"
 	"github.com/dtm-labs/dtmgrpc"
 )
 
@@ -14,19 +13,15 @@ const (
 )
 
 func main() {
-	tcc(busiServer)
+	msg(busiServer)
 }
 
-func tcc(busiServer string) {
+func msg(busiServer string) {
 	gid := dtmgrpc.MustGenGid(dtmServer)
-	err := dtmgrpc.TccGlobalTransaction(dtmServer, gid, func(tcc *dtmgrpc.TccGrpc) error {
-		rep := v1.Response{}
-		err1 := tcc.CallBranch(&busi.BusiReq{Amount: 30, UserId: 1},
-			busiServer+"/api.trans.v1.Trans/TransIn",
-			busiServer+"/api.trans.v1.Trans/TransOut", // 应当为TransOutConfirm，后续会完善例子
-			busiServer+"/api.trans.v1.Trans/TransOut", // 应当为TransOutCancel，后续会完善例子
-			&rep)
-		return err1
-	})
+	m := dtmgrpc.NewMsgGrpc(dtmServer, gid).
+		Add(busiServer+"/api.trans.v1.Trans/TransOut", &busi.BusiReq{Amount: 30, UserId: 1}).
+		Add(busiServer+"/api.trans.v1.Trans/TransIn", &busi.BusiReq{Amount: 30, UserId: 2})
+	m.WaitResult = true
+	err := m.Submit()
 	logger.FatalIfError(err)
 }
