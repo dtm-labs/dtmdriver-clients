@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	dtmServer  = "discovery://localhost:2379/dtmservice"
+	dtmServer  = "etcd://localhost:2379/dtmservice"
 	busiServer = "discovery://127.0.0.1:2379/trans"
 )
 
