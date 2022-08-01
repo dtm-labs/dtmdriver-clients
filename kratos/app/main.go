@@ -1,15 +1,15 @@
 package main
 
 import (
+	"github.com/dtm-labs/client/dtmcli/logger"
+	"github.com/dtm-labs/client/dtmgrpc"
 	_ "github.com/dtm-labs/driver-kratos"
-	"github.com/dtm-labs/dtmcli/logger"
 	"github.com/dtm-labs/dtmdriver-clients/busi"
-	"github.com/dtm-labs/dtmgrpc"
 )
 
 const (
-	dtmServer  = "discovery://localhost:2379,localhost:2379,localhost:2379/dtmservice"
-	busiServer = "discovery://127.0.0.1:2379,127.0.0.1:2379,127.0.0.1:2379/trans"
+	dtmServer  = "etcd://localhost:2379/dtmservice"
+	busiServer = "discovery://127.0.0.1:2379/trans"
 )
 
 func main() {

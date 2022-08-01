@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/dtm-labs/dtmcli/dtmimp"
+	"github.com/dtm-labs/client/dtmcli/dtmimp"
 	"github.com/dtm-labs/dtmdriver-clients/busi"
 	"github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
 	trans "github.com/dtm-labs/dtmdriver-clients/gozero/trans/pb"
@@ -11,8 +11,8 @@ import (
 	"github.com/zeromicro/go-zero/zrpc"
 
 	// 下面这行导入gozero的dtm驱动
+	"github.com/dtm-labs/client/dtmgrpc"
 	_ "github.com/dtm-labs/driver-gozero"
-	"github.com/dtm-labs/dtmgrpc"
 )
 
 var (
