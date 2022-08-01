@@ -10,7 +10,7 @@
 ### 代码下载
 
 ```shell
-git clone git@github.com/dtm-labs/dtf.git
+git clone git@github.com/dtm-labs/dtm.git
 ```
 
 ### 配置
