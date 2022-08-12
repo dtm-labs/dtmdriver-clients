@@ -13,7 +13,7 @@ require (
 	github.com/kevwan/gozero-dtm v0.0.0-20211201122454-5007fb2b35a1
 	github.com/shirou/gopsutil/v3 v3.22.7 // indirect
 	github.com/tklauser/numcpus v0.5.0 // indirect
-	github.com/vicnoah/driver-ego v1.0.1
+	github.com/vicnoah/driver-ego v1.0.3
 	github.com/zeromicro/go-zero v1.3.1
 	go.opentelemetry.io/otel/exporters/jaeger v1.9.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.9.0 // indirect

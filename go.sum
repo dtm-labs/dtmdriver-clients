@@ -878,10 +878,10 @@ github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijb
 github.com/urfave/cli v1.22.1/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=
 github.com/urfave/cli v1.22.5/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=
 github.com/urfave/cli/v2 v2.3.0/go.mod h1:LJmUH05zAU44vOAcrfzZQKsZbVcdbOG8rtL3/XcUArI=
-github.com/vicnoah/driver-ego v1.0.1 h1:afHWOHoypFWMKhGlVXrgHx8iMIk8j2xai+Ib8FIiAD8=
-github.com/vicnoah/driver-ego v1.0.1/go.mod h1:BuAzP/9GOFJ5bmNoWmmatynYW1BPn7nhuvITuHUapIc=
-github.com/vicnoah/dtmdriver-ego v0.1.2 h1:G8/Ot8Ex+IB2Y+s3UeQg+kQiljUqeWLAwUtmZKT0rWU=
-github.com/vicnoah/dtmdriver-ego v0.1.2/go.mod h1:5ve8WXy9Hb3xhK00Jcli8FbH73JD0FyKLmMys000zJg=
+github.com/vicnoah/driver-ego v1.0.3 h1:cCR/Oj56voS2JiKL8sfkp+2/NTlZe3C595zLvxg+rhg=
+github.com/vicnoah/driver-ego v1.0.3/go.mod h1:b2qFqhmXDTZeEM8T4ujRIFfaHj1vwjwZ0sNeuZQTGU8=
+github.com/vicnoah/dtmdriver-ego v0.1.6 h1:y4sM7SdCBpPhbNDP/dSngMgzDRjmdX8rbW0ejdmgFDo=
+github.com/vicnoah/dtmdriver-ego v0.1.6/go.mod h1:sfzbzsPhhRKcCJONbonM8ISJNmZ5wszF/6nZR4dmphU=
 github.com/wk8/go-ordered-map v0.2.0/go.mod h1:9ZIbRunKbuvfPKyBP1SIKLcXNlv74YCOZ3t3VTS6gRk=
 github.com/wk8/go-ordered-map v1.0.0/go.mod h1:9ZIbRunKbuvfPKyBP1SIKLcXNlv74YCOZ3t3VTS6gRk=
 github.com/xdg-go/pbkdf2 v1.0.0 h1:Su7DPu48wXMwC3bs7MCNG+z4FhcyEuz5dlvchbq0B0c=
