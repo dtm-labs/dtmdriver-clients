@@ -13,11 +13,10 @@ require (
 	github.com/kevwan/gozero-dtm v0.0.0-20211201122454-5007fb2b35a1
 	github.com/shirou/gopsutil/v3 v3.22.7 // indirect
 	github.com/tklauser/numcpus v0.5.0 // indirect
-	github.com/vicnoah/driver-ego v1.0.3
+	github.com/vicnoah/driver-ego v1.0.4
 	github.com/zeromicro/go-zero v1.3.1
 	go.opentelemetry.io/otel/exporters/jaeger v1.9.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.9.0 // indirect
-	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
-	google.golang.org/grpc v1.48.0
+	google.golang.org/grpc v1.49.0
 	google.golang.org/protobuf v1.28.1
 )

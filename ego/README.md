@@ -43,3 +43,11 @@ cd ego/app
 
 export EGO_DEBUG=true EGO_NAME=hello-client && go run main.go --config=config.toml
 ```
+当您在trans的日志中看到类似的日志
+```shell
+2022-09-17 16:30:34     INFO    elog/elog_api.go:22     [info]                                  {"desc": "transfer out 30 cents from 1"}
+2022-09-17 16:30:34     INFO    egrpc/interceptor.go:325        access                                  {"comp": "server.egrpc", "compName": "server.grpc", "type": "unary", "code": 0, "ucode": 200, "desc": "OK", "event": "normal", "method": "/busi.Busi/TransOut", "cost": 0.528, "peerName": "", "peerIp": "127.0.0.1", "tid": "f141e6e80e7c40a6a13b14865d596a53"}
+2022-09-17 16:30:34     INFO    elog/elog_api.go:22     [info]                                  {"desc": "transfer in 30 cents to 2"}
+2022-09-17 16:30:34     INFO    egrpc/interceptor.go:325        access                                  {"comp": "server.egrpc", "compName": "server.grpc", "type": "unary", "code": 0, "ucode": 200, "desc": "OK", "event": "normal", "method": "/busi.Busi/TransIn", "cost": 0.28, "peerName": "", "peerIp": "127.0.0.1", "tid": "8b0bf21cfa3de824ba0ca3a7c6640fd1"}
+```
+那就是事务正常了
