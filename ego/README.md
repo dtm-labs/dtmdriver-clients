@@ -19,7 +19,7 @@ git clone git@github.com/dtm-labs/dtm.git
 MicroService:
  Driver: 'dtm-driver-ego' # name of the driver to handle register/discover
  Target: 'etcd://127.0.0.1:2379/dtmservice' # register dtm server to this url
- EndPoint: 'grpc://localhost:36790'
+ EndPoint: 'localhost:36790'
 ```
 
 ### 运行dtm
