@@ -11,7 +11,7 @@ import (
 
 	// 下面这行导入ego的dtm驱动
 	"github.com/dtm-labs/client/dtmgrpc"
-	_ "github.com/vicnoah/driver-ego"
+	_ "github.com/dtm-labs/driver-ego"
 )
 
 var dtmServer = "etcd:///dtmservice"

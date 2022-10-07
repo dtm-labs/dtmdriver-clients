@@ -200,6 +200,8 @@ github.com/docker/spdystream v0.0.0-20160310174837-449fdfce4d96/go.mod h1:Qh8CwZ
 github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:WwZ+bS3ebgob9U8Nd0kOddGdZWjyMGR8Wziv+TBNwSE=
 github.com/dtm-labs/client v1.16.0 h1:AfzUgmfp8UwtGyqvV0dxTFdiSSAS8Xb+CEVjHRxwPgQ=
 github.com/dtm-labs/client v1.16.0/go.mod h1:Hmxkg0cbCDQjWEAjAJ4zhA4RZPQD8TwzxGtxAJCwWT8=
+github.com/dtm-labs/driver-ego v1.0.5 h1:Q1vRkSgKXzWwUx3E0RBV0QO+Y8ZJmY6ajJwpepgunv8=
+github.com/dtm-labs/driver-ego v1.0.5/go.mod h1:Aq3v8zCdmfVHTBwVcUssI5b/rQY/LoGrQXuPk0HmVQ0=
 github.com/dtm-labs/driver-gozero v0.0.2 h1:ZxVn1PgwY/nk3dONLj01SLRCF5jnM0HAEFEH2GFiTl8=
 github.com/dtm-labs/driver-gozero v0.0.2/go.mod h1:Y16a/3APsgKdK3jgqMLau8Or3AZVzg5zh4G3uOtSFYo=
 github.com/dtm-labs/driver-kratos v0.0.5 h1:UHyHwv2TlNkAq/U5Y/PbIr6ih7plzuITofllkWerDKs=
@@ -208,6 +210,8 @@ github.com/dtm-labs/dtmdriver v0.0.1/go.mod h1:fLiEeD2BPwM9Yq96TfcP9KpbTwFsn5nTx
 github.com/dtm-labs/dtmdriver v0.0.3/go.mod h1:fLiEeD2BPwM9Yq96TfcP9KpbTwFsn5nTxa/PP0jmFuk=
 github.com/dtm-labs/dtmdriver v0.0.6 h1:Iz6xnO+hE2TKDHI2TX4BKCzMtgXYgeQFBEGvvaNhbs8=
 github.com/dtm-labs/dtmdriver v0.0.6/go.mod h1:V5E1uFsExb6Do32ezpB8bMX6be+izLhkcboniLP5shU=
+github.com/dtm-labs/dtmdriver-ego v0.1.8 h1:nS8euCVSg5BSl3QHDIb89uDoRJqjtvcGvWyiPllYji8=
+github.com/dtm-labs/dtmdriver-ego v0.1.8/go.mod h1:vvYMNetDVNUtiCAVRy3OutRCiQRT0fEwdWzouCPL9JY=
 github.com/dtm-labs/dtmdriver-gozero v0.0.2 h1:T+JH9kwVNMmISPU1BNviiTrvPdMA7UMFD+nfTqGPSyA=
 github.com/dtm-labs/dtmdriver-gozero v0.0.2/go.mod h1:5AAKwYok5f56e0kATOXvc+DAsfu4elISDuCV+G3+fYE=
 github.com/dtm-labs/dtmdriver-kratos v0.0.8 h1:AAIfFzpzuu7K3B/wpx71y0FdZqO1X/Bsklva0bayS9s=
@@ -890,10 +894,6 @@ github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijb
 github.com/urfave/cli v1.22.1/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=
 github.com/urfave/cli v1.22.5/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=
 github.com/urfave/cli/v2 v2.3.0/go.mod h1:LJmUH05zAU44vOAcrfzZQKsZbVcdbOG8rtL3/XcUArI=
-github.com/vicnoah/driver-ego v1.0.4 h1:lhOK3STkxm1Haa9sTIiMCp7lKY8Aqk7L9HRDEu3aQts=
-github.com/vicnoah/driver-ego v1.0.4/go.mod h1:QA7Er8ztDrqhDVuodpuRUhJE+xANE0fkL6iRg9w1iXk=
-github.com/vicnoah/dtmdriver-ego v0.1.7 h1:w8BRdvhp7EmFQKO8L8gVXoiLSKA2VOppL8HtXaJsDE4=
-github.com/vicnoah/dtmdriver-ego v0.1.7/go.mod h1:x1PgmeE0byvzwTKvn5/RojUXiD39Uf4HRdzYT2NQW18=
 github.com/wk8/go-ordered-map v0.2.0/go.mod h1:9ZIbRunKbuvfPKyBP1SIKLcXNlv74YCOZ3t3VTS6gRk=
 github.com/wk8/go-ordered-map v1.0.0/go.mod h1:9ZIbRunKbuvfPKyBP1SIKLcXNlv74YCOZ3t3VTS6gRk=
 github.com/xdg-go/pbkdf2 v1.0.0 h1:Su7DPu48wXMwC3bs7MCNG+z4FhcyEuz5dlvchbq0B0c=
