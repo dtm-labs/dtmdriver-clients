@@ -9,10 +9,12 @@ require (
 	github.com/dtm-labs/client v1.16.5
 	github.com/dtm-labs/driver-ego v1.0.5
 	github.com/dtm-labs/driver-gozero v0.0.2
-	github.com/dtm-labs/driver-kratos v0.0.5
+	github.com/dtm-labs/driver-kratos v0.0.6
 	github.com/dtm-labs/dtmdriver-gozero v0.0.7 // indirect
 	github.com/emicklei/go-restful v2.16.0+incompatible // indirect
 	github.com/emicklei/go-restful/v3 v3.10.1 // indirect
+	github.com/go-kratos/kratos/contrib/registry/etcd/v2 v2.0.0-20220301040457-03ad2b663624
+	github.com/go-kratos/kratos/v2 v2.2.1
 	github.com/gotomicro/ego v1.1.5
 	github.com/gotomicro/ego-component/eetcd v0.2.3
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.11.2 // indirect
@@ -30,7 +32,7 @@ require (
 	github.com/zeromicro/go-zero v1.4.2
 	github.com/zeromicro/zero-contrib/zrpc/registry/consul v0.0.0-20221119154608-12cfed75fa7c // indirect
 	github.com/zeromicro/zero-contrib/zrpc/registry/nacos v0.0.0-20221119154608-12cfed75fa7c // indirect
-	go.etcd.io/etcd/client/v3 v3.5.6 // indirect
+	go.etcd.io/etcd/client/v3 v3.5.6
 	go.mongodb.org/mongo-driver v1.11.0 // indirect
 	go.opentelemetry.io/otel v1.11.1 // indirect
 	golang.org/x/crypto v0.3.0 // indirect
