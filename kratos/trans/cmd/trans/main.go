@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"github.com/go-kratos/kratos/contrib/registry/etcd/v2"
+	"github.com/go-kratos/kratos/v2/transport/grpc/resolver/discovery"
 	clientv3 "go.etcd.io/etcd/client/v3"
+	"google.golang.org/grpc/resolver"
 	"os"
 
 	"github.com/go-kratos/kratos/v2"
@@ -38,6 +40,9 @@ func newApp(logger log.Logger, gs *grpc.Server) *kratos.App {
 	if err != nil {
 		log.Fatal(err)
 	}
+	registry := etcd.New(client)
+	//register global resolver so that dtm client can resolve dtm server itself by registry
+	resolver.Register(discovery.NewBuilder(registry, discovery.WithInsecure(true)))
 	return kratos.New(
 		kratos.ID(id),
 		kratos.Name("trans"),
@@ -47,7 +52,7 @@ func newApp(logger log.Logger, gs *grpc.Server) *kratos.App {
 		kratos.Server(
 			gs,
 		),
-		kratos.Registrar(etcd.New(client)),
+		kratos.Registrar(registry),
 	)
 }
 

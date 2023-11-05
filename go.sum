@@ -529,11 +529,9 @@ github.com/dtm-labs/driver-ego v1.0.5 h1:Q1vRkSgKXzWwUx3E0RBV0QO+Y8ZJmY6ajJwpepg
 github.com/dtm-labs/driver-ego v1.0.5/go.mod h1:Aq3v8zCdmfVHTBwVcUssI5b/rQY/LoGrQXuPk0HmVQ0=
 github.com/dtm-labs/driver-gozero v0.0.2 h1:ZxVn1PgwY/nk3dONLj01SLRCF5jnM0HAEFEH2GFiTl8=
 github.com/dtm-labs/driver-gozero v0.0.2/go.mod h1:Y16a/3APsgKdK3jgqMLau8Or3AZVzg5zh4G3uOtSFYo=
-github.com/dtm-labs/driver-kratos v0.0.5 h1:UHyHwv2TlNkAq/U5Y/PbIr6ih7plzuITofllkWerDKs=
-github.com/dtm-labs/driver-kratos v0.0.5/go.mod h1:Anya5FD5h0J3pcg0t6kLo3RAZ2TyS9qOcK9xWiz0SpA=
+github.com/dtm-labs/driver-kratos v0.0.6 h1:4hDc5hGeUSE4QtQ5gKA+Cv0KyAY/U5jgDSoj7mYngho=
 github.com/dtm-labs/driver-kratos v0.0.6/go.mod h1:lGUqCN+CoxX817nUImJP0zrRIWJwSjgQYwE7hSYYKlM=
 github.com/dtm-labs/dtmdriver v0.0.1/go.mod h1:fLiEeD2BPwM9Yq96TfcP9KpbTwFsn5nTxa/PP0jmFuk=
-github.com/dtm-labs/dtmdriver v0.0.3/go.mod h1:fLiEeD2BPwM9Yq96TfcP9KpbTwFsn5nTxa/PP0jmFuk=
 github.com/dtm-labs/dtmdriver v0.0.6 h1:Iz6xnO+hE2TKDHI2TX4BKCzMtgXYgeQFBEGvvaNhbs8=
 github.com/dtm-labs/dtmdriver v0.0.6/go.mod h1:V5E1uFsExb6Do32ezpB8bMX6be+izLhkcboniLP5shU=
 github.com/dtm-labs/dtmdriver-ego v0.1.8 h1:nS8euCVSg5BSl3QHDIb89uDoRJqjtvcGvWyiPllYji8=
@@ -541,8 +539,7 @@ github.com/dtm-labs/dtmdriver-ego v0.1.8/go.mod h1:vvYMNetDVNUtiCAVRy3OutRCiQRT0
 github.com/dtm-labs/dtmdriver-gozero v0.0.2/go.mod h1:5AAKwYok5f56e0kATOXvc+DAsfu4elISDuCV+G3+fYE=
 github.com/dtm-labs/dtmdriver-gozero v0.0.7 h1:EmbP0tFjczBfk+FJaPbK2Ikzyb3V5f0rn2JH1eHCVRo=
 github.com/dtm-labs/dtmdriver-gozero v0.0.7/go.mod h1:OLz0vfGkWTWK24V1Ed69lWRqu5ROXNhQM7p/oRxgdgs=
-github.com/dtm-labs/dtmdriver-kratos v0.0.8 h1:AAIfFzpzuu7K3B/wpx71y0FdZqO1X/Bsklva0bayS9s=
-github.com/dtm-labs/dtmdriver-kratos v0.0.8/go.mod h1:MlREYO7d7Ocbs4NsuU/LQMBBcHix6rubjW+in2hNRyk=
+github.com/dtm-labs/dtmdriver-kratos v0.0.10 h1:M46un8T47BIiSmuQSBhAEbqQx6wgYSyY0x7IaAVvJi4=
 github.com/dtm-labs/dtmdriver-kratos v0.0.10/go.mod h1:aLy3llapyW89JXAkFT2QLK8SHLnLctsPEBpNVz73rV4=
 github.com/dtm-labs/logger v0.0.1 h1:187UPkYviyOXelmkbew+Q94mg/BFjxJEsHfyHawu5YQ=
 github.com/dtm-labs/logger v0.0.1/go.mod h1:0woMQZ6ljx9wZIl7hW8cuV2PRQmwEKxhqYtab7zVNWg=
